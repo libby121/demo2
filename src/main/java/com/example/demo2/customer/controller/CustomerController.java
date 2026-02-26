@@ -14,6 +14,7 @@ public class CustomerController {
         this.customerService=cs;
     }
 
+    //test merge conflict in branch 1
     @GetMapping("one/{id}")
     public ResponseEntity<CustomerDto>getOne(@PathVariable int id){
             return ResponseEntity.ok(customerService.getOne(id));
