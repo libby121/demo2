@@ -18,6 +18,8 @@ public class CustomerController {
     public ResponseEntity<CustomerDto>getOne(@PathVariable int id){
             return ResponseEntity.ok(customerService.getOne(id));
     }
+
+    //test conflict branch master
     @PostMapping("add")
     public ResponseEntity<CustomerDto>add(@RequestBody CustomerDto dto){
         return ResponseEntity.ok(customerService.add(dto));
